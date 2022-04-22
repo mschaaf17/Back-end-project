@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: right;
+    padding-top: 5%;
+    background-color: gray;
+    width: 100%;
+}
+
+h2 {
+    margin: 0 5%;
+}
