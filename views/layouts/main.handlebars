@@ -10,13 +10,13 @@
 
 <body>
     <main>
-        <header>
-            <h2 class="login">
-                <a href="">Login</a>
-            </h2>
-            <h2 class="sign-up">Sign Up</h2>
-        </header>
-        
+    {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">
+        Logout<button>
+    {{else}}
+        <a href="/login">Login</a>
+    
     </main>
 </body>
 </html>
