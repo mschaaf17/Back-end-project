@@ -15,3 +15,24 @@ header {
 h2 {
     margin: 0 5%;
 }
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+    background-color: green;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: blue;
+    
+}
+
+h4{
+    width: 70%;
+}
