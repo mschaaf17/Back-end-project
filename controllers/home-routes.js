@@ -4,7 +4,9 @@ const { Post, User, Comment, Likes } = require('../models');
 
 
 router.get('/', (req, res) => {
-  res.render('homepage')
+  if(req.session.loggedIn){
+    res.render('homepage')
+  } else res.render("login")
 })
 
 // // get all posts for homepage
