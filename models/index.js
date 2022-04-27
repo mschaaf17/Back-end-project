@@ -7,7 +7,7 @@ const Comment = require('./Comment');
 
 //Create associations between tables:
 
-User.hasMany(Post,{
+User.hasMany(Post, {
     foreignKey: 'user_id'
 });
 
@@ -20,44 +20,44 @@ User.belongsToMany(Post, {
     through: Likes,
     as: 'liked_posts',
     foreignKey: 'user_id',
-    onDelete:'SET NULL'
+    onDelete: 'SET NULL'
 });
 
 Likes.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'SET NULL'
-  });
-  
-  Likes.belongsTo(Post, {
+});
+
+Likes.belongsTo(Post, {
     foreignKey: 'post_id',
     onDelete: 'SET NULL'
-  });
-  
-  User.hasMany(Likes, {
+});
+
+User.hasMany(Likes, {
     foreignKey: 'user_id'
-  });
-  
-  Post.hasMany(Likes, {
+});
+
+Post.hasMany(Likes, {
     foreignKey: 'post_id'
-  });
-  
-  Comment.belongsTo(User, {
+});
+
+Comment.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'SET NULL'
-  });
-  
-  Comment.belongsTo(Post, {
+});
+
+Comment.belongsTo(Post, {
     foreignKey: 'post_id',
     onDelete: 'SET NULL'
-  });
-  
-  User.hasMany(Comment, {
+});
+
+User.hasMany(Comment, {
     foreignKey: 'user_id',
     onDelete: 'SET NULL'
-  });
-  
-  Post.hasMany(Comment, {
+});
+
+Post.hasMany(Comment, {
     foreignKey: 'post_id'
-  });
-  
-  module.exports = { User, Post, Likes, Comment };
+});
+
+module.exports = { User, Post, Likes, Comment };
