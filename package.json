@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "backend-project",
   "version": "1.0.0",
   "description": "",
@@ -27,5 +28,9 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.0",
     "session": "^0.1.0"
+=======
+  "dependencies": {
+    "bulma": "^0.9.3"
+>>>>>>> 0fc2ce0017017b2ce1992b836ee8e482b9ab36d2
   }
 }
