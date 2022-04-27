@@ -28,7 +28,7 @@ app.use(session(sess))
 
 //run handlebars
 const hbs = exphbs.create({})
-app.engine =('handlebars', hbs.engine)
+app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
 
 
@@ -38,7 +38,7 @@ app.use(express.urlencoded({ extended: false}))
 //join the public folders
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use(require('./controllers'))
+app.use(require('./controllers/'))
 
 
 sequelize.sync({force: false}).then(() => {
