@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize')
 const sequelize = require('../config/connection')
 
 class Post extends Model {
-    static upvote(body, models) {
+    static likes(body, models) {
         return models.Likes.create({
             user_id: body.user_id,
             post_id: body.post_id
@@ -13,10 +13,10 @@ class Post extends Model {
                 },
                 attributes: [
                     'id',
-                    'post_url',
+                    'post_text',
                     'title',
                     'created_at',
-                    [sequelize.literal('(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)'), 'likes']
+                    [sequelize.literal('(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)'), 'likes_count']
                 ],
                 include: [
                     {
@@ -45,7 +45,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
+        post_text: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
