@@ -25,9 +25,10 @@ app.use(session(sess))
 
 
 //set up helpers
+const helpers = require('./utils/helpers')
 
 //run handlebars
-const hbs = exphbs.create({})
+const hbs = exphbs.create({helpers})
 app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
 
