@@ -36,8 +36,8 @@ router.get('/:id', (req, res) => {
         {
             model: Post,
             attributes: ['title'],
-            through: Vote,
-            as: 'voted_posts'
+            through: Likes,
+            as: 'liked_posts'
           }
         ]
     }) 

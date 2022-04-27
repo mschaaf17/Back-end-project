@@ -38,6 +38,9 @@ app.use(express.urlencoded({ extended: false}))
 //join the public folders
 app.use(express.static(path.join(__dirname, 'public')))
 
-sequelize.sync({force: true}).then(() => {
+app.use(require('./controllers'))
+
+
+sequelize.sync({force: false}).then(() => {
     app.listen(PORT, () => console.log('Now listening'))
 })
