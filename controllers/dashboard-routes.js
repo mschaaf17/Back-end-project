@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Post, User, Comment, Likes } = require('../models');
 const withAuth = require('../utils/auth');
 
 // get all posts for dashboard
@@ -13,9 +13,11 @@ router.get('/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'content',
+      'post_text',
       'title',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)'), 'likes_count']
+
     ],
     include: [
       {
@@ -46,9 +48,10 @@ router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',
-      'content',
+      'post_text',
       'title',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)'), 'likes_count']
     ],
     include: [
       {
