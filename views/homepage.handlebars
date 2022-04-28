@@ -1,23 +1,16 @@
-<main>
-        <nav >
-            <h2> THIS NEEDS TO BE HIDDEN ON HOMEPAGE
-                Code Prep
-            </h2>
-            <h3 class="left-link">
-                <a href="/login">Login</a>
-            </h3>
-            <h3 class="right-link">
-                <a href="/login">Sign Up</a>
-            </h3>
-        </nav>
-        <div class="content-titles">
-            <h1>
-                Welcome to Code Prep!
-            </h1>
-        </div>
-        <div class="content">
-            <h4>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et illum, praesentium neque suscipit debitis natus quam quisquam quas, porro eos molestias id repellendus tempora quia obcaecati iusto doloribus voluptas! Tempora?
-            </h4>
-        </div>
-</main>
+{{#if loggedIn}}
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+   {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
+{{else}}
+<div class="welcome">
+ Welcome
+</div>
+<p class ="app-info">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est animi recusandae eaque reiciendis aut iste, culpa sint blanditiis! Laboriosam, hic. Consequuntur aut sit alias eos molestias delectus asperiores ratione!
+</p>
+{{/if}}

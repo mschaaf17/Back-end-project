@@ -8,12 +8,27 @@
         </div>
         {{!-- THIS IS THE ADD YOUR OWN QUESTION SECTION INSTEAD OF CLICKING ON A LINK IT WOULD PROBABLY BE EASIER TO JUST HAVE THE INPUT FIELDS SHOWING ALREADY IN THAT COL --}}
         <div>
-            <label for="question-url">Link</label>
+            <label for="question-url">Content</label>
             <input id="question-url" name="question-url" />
         </div>
         <button type="submit" class="btn">Create</button>
     </form>
 </section>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
 
 
 <script src="/javascript/add-question.js"></script>
