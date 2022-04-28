@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const sequelize = require('../../config/connection')
 const { User, Post, Comment, Likes }= require('../../models')
-const withAuth = require('../../utils/auth')
+//const withAuth = require('../../utils/auth')
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -69,7 +69,7 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
         post_text: req.body.post_text,
@@ -82,7 +82,7 @@ router.post('/', withAuth, (req, res) => {
     })
 })
 
-router.put('/likes', withAuth, (req, res) => {
+router.put('/likes', (req, res) => {
     Post.likes({...req.body, user_id: req.session.user_id }, {Likes, Comment, User})
     .then(updatedLikesData => res.json(updatedLikesData))
     .catch(err => {
@@ -93,7 +93,7 @@ router.put('/likes', withAuth, (req, res) => {
 
 
 
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     Post.update(
         {
             title: req.body.title,
@@ -119,7 +119,7 @@ router.put('/:id', withAuth, (req, res) => {
 })
 
 
-router.delete('/:id', withAuth, (req, res)=> {
+router.delete('/:id', (req, res)=> {
     Post.destroy({
         where: {
             id: req.params.id
