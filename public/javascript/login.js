@@ -1,4 +1,4 @@
-np; //login page
+//login page
 
 async function loginFormHandler(event) {
   event.preventDefault();

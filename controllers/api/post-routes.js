@@ -83,7 +83,7 @@ router.post('/', withAuth, (req, res) => {
 })
 
 router.put('/likes', withAuth, (req, res) => {
-    Post.upvote({...req.body, user_id: req.session.user_id }, {Likes, Comment, User})
+    Post.likes({...req.body, user_id: req.session.user_id }, {Likes, Comment, User})
     .then(updatedLikesData => res.json(updatedLikesData))
     .catch(err => {
         console.log(err)
