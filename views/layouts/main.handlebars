@@ -13,22 +13,34 @@
 <body>
   <div class ='wrapper'>
     <header>
-      <h1>
+      <h1 class="code-prep">
         {{#if loggedIn}}
         <a href="/">Code Prep</a>
         {{else}}
         <a href="/login">Code Prep</a>
         {{/if}}
       </h1>
-      <nav>
       
+      <nav>
         {{#if loggedIn}}
-        <a href ="/dashboard">dashboard </a>
-        <button id ="logout">logout</button>
+        <ul>
+          <li>
+            <a href ="/dashboard">Dashboard </a>
+          </li>
+          <li>
+            <button id ="logout">Logout</button>
+          </li>
+          </ul>
         {{else}}
-        <a href ="/login">login</a>
+          <ul>
+            <li>
+              <a href ="/login">Login</a>
+            </li>
+          </ul>
         {{/if}}
       </nav>
+        
+      
     </header>
     <main>
       {{{ body }}}

@@ -1,10 +1,10 @@
 <main class="columns">
     <div class="column">
-        <div class="content-titles">
-            <h1>
+        <header class="content-titles">
+            <h2>
                 Welcome to Code Prep!
-            </h1>
-        </div>
+            </h2>
+        </header>
         <div class="content">
             <h4>
                 Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
@@ -14,20 +14,20 @@
     </div>
 
 {{#if loggedIn}}
-<h2>View Most Recent Interview Questions</h2>
+<div class="column ">
+    <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-   {{> post-info post}}
-  </li>
-  {{/each}}
+    {{#each posts as |post|}}
+    <li>
+    {{> post-info post}}
+    </li>
+    {{/each}}
 </ol>
+</div>
+
 {{else}}
 
-
-
-
-    <div class="column">
+    <div class="column content">
         <form class="login-form">
             <div>
                 <label for="email-login">Email:</label>
@@ -62,7 +62,9 @@
     </div>
 </main>
 
+<script src ="/javascript/login.js"></script>
 
+{{/if}}
 
 
 {{!-- <div class="welcome">
@@ -105,6 +107,4 @@
     </div>
 </form> --}}
 
-<script src ="/javascript/login.js"></script>
 
-{{/if}}
