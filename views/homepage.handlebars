@@ -1,3 +1,18 @@
+<main class="columns">
+    <div class="column">
+        <div class="content-titles">
+            <h1>
+                Welcome to Code Prep!
+            </h1>
+        </div>
+        <div class="content">
+            <h4>
+                Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
+                interview questions, algorithms, or other fun challenges.
+            </h4>
+        </div>
+    </div>
+
 {{#if loggedIn}}
 <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
@@ -8,7 +23,49 @@
   {{/each}}
 </ol>
 {{else}}
-<div class="welcome">
+
+
+
+
+    <div class="column">
+        <form class="login-form">
+            <div>
+                <label for="email-login">Email:</label>
+                <input type="text" id="email-login" />
+            </div>
+            <div>
+                <label for="password-login">Password:</label>
+                <input type="password" id="password-login" />
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+        <form class="signup-form">
+            <div>
+                <label for="username-signup">UserName:</label>
+                <input type="text" id="username-signup" />
+            </div>
+            <div>
+                <label for="email-signup">Email:</label>
+                <input type="text" id="email-signup" />
+            </div>
+            <div>
+                <label for="password-signup">Password:</label>
+                <input type="password" id="password-signup" />
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+
+
+{{!-- <div class="welcome">
  Welcome
 </div>
 <p class ="app-info">
@@ -46,7 +103,7 @@
     <div>
         <button type="submit">Sign Up</button>
     </div>
-</form>
+</form> --}}
 
 <script src ="/javascript/login.js"></script>
 
