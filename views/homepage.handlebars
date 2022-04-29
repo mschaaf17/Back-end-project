@@ -1,15 +1,5 @@
-<main>
-        <nav >
-            <h2> THIS NEEDS TO BE HIDDEN ON HOMEPAGE
-                Code Prep
-            </h2>
-            <h3 class="left-link">
-                <a href="/login">Login</a>
-            </h3>
-            <h3 class="right-link">
-                <a href="/login">Sign Up</a>
-            </h3>
-        </nav>
+<main class="columns">
+    <div class="column">
         <div class="content-titles">
             <h1>
                 Welcome to Code Prep!
@@ -17,7 +7,43 @@
         </div>
         <div class="content">
             <h4>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et illum, praesentium neque suscipit debitis natus quam quisquam quas, porro eos molestias id repellendus tempora quia obcaecati iusto doloribus voluptas! Tempora?
+                Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
+                interview questions, algorithms, or other fun challenges.
             </h4>
         </div>
+    </div>
+
+    <div class="column">
+        <form class="login-form">
+            <div>
+                <label for="email-login">Email:</label>
+                <input type="text" id="email-login" />
+            </div>
+            <div>
+                <label for="password-login">Password:</label>
+                <input type="password" id="password-login" />
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+        <form class="signup-form">
+            <div>
+                <label for="username-signup">UserName:</label>
+                <input type="text" id="username-signup" />
+            </div>
+            <div>
+                <label for="email-signup">Email:</label>
+                <input type="text" id="email-signup" />
+            </div>
+            <div>
+                <label for="password-signup">Password:</label>
+                <input type="password" id="password-signup" />
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
 </main>

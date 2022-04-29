@@ -3,20 +3,25 @@
     padding: 0;
 }
 
-header {
+nav {
     display: flex;
     align-items: baseline;
     justify-content: right;
     padding-top: 5%;
     background-color: gray;
     width: 100%;
+    
 }
 
 h2 {
+    margin-right: 75%;
+}
+
+h3 {
     margin: 0 5%;
 }
 
-.content {
+.content-titles {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +29,7 @@ h2 {
     background-color: green;
 }
 
-.about {
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,4 +40,12 @@ h2 {
 
 h4{
     width: 70%;
+}
+
+h1 {
+    background-color: black;
+}
+
+.col {
+    margin: 5%;
 }
