@@ -13,6 +13,20 @@
         </div>
     </div>
 
+{{#if loggedIn}}
+<h2>View Most Recent Interview Questions</h2>
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+   {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
+{{else}}
+
+
+
+
     <div class="column">
         <form class="login-form">
             <div>
@@ -47,17 +61,11 @@
         </form>
     </div>
 </main>
-{{#if loggedIn}}
-<h2>View Most Recent Interview Questions</h2>
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-   {{> post-info post}}
-  </li>
-  {{/each}}
-</ol>
-{{else}}
-<div class="welcome">
+
+
+
+
+{{!-- <div class="welcome">
  Welcome
 </div>
 <p class ="app-info">
@@ -95,7 +103,7 @@
     <div>
         <button type="submit">Sign Up</button>
     </div>
-</form>
+</form> --}}
 
 <script src ="/javascript/login.js"></script>
 
