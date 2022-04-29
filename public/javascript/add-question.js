@@ -1,8 +1,8 @@
 async function newFormHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="post-title"]').value;
-    const question = document.querySelector('input[name="post_textl"]').value;
+    const title = document.querySelector('input[name="question-title"]').value;
+    const post_text = document.querySelector('input[name="question-url"]').value;
 
     const response = await fetch('/api/posts', {
         method: 'POST',
@@ -22,4 +22,4 @@ async function newFormHandler(event) {
     }
 } 
 
-document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-question-form').addEventListener('submit', newFormHandler);

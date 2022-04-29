@@ -1,13 +1,13 @@
 <article class="post">
-    <div class="title">
-        <a href="{{post_text}}" target="_blank">{{title}}</a>
-        <span>({{}})</span>
-    </div>
-    <div class="meta">
-      {{like_count}} {{format_plural "point" like_count}} by {{user.username}} on {{format_date created_at}} 
-{{!-- WE DONT NEED THE FORMAT DATE OR CREATED AT RIGHT --}}
+  <div class="title">
+    <a href ="/post/{{id}}" target="_blank">{{title}}</a>
+    <p>{{post_text}}</p>
+  </div>
+  <div class="meta">
+    {{like_count}} {{format_plural "point" like_count}} by {{user.username}} on {{format_date created_at}}
+    {{!-- WE DONT NEED THE FORMAT DATE OR CREATED AT RIGHT --}}
 
-      |
-      <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-    </div>
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
 </article>

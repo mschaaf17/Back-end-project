@@ -8,7 +8,7 @@
         </div>
         {{!-- THIS IS THE ADD YOUR OWN QUESTION SECTION INSTEAD OF CLICKING ON A LINK IT WOULD PROBABLY BE EASIER TO JUST HAVE THE INPUT FIELDS SHOWING ALREADY IN THAT COL --}}
         <div>
-            <label for="question-url">Link</label>
+            <label for="question-url">Content</label>
             <input id="question-url" name="question-url" />
         </div>
         <button type="submit" class="btn">Create</button>
@@ -28,4 +28,22 @@
   </ol>
 </section>
 {{/if}}
+
+
+<h2>View Most Recent Interview Questions</h2>
+{{#if loggedIn}}
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
+{{/if}}
+
+
+
+
+
+
 <script src="/javascript/add-question.js"></script>
