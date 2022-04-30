@@ -105,4 +105,12 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/career', (req, res) =>{
+    res.render('career', {
+    loggedIn: true
+    })
+  
+  
+  })
+
 module.exports = router;
