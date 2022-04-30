@@ -30,15 +30,17 @@
 {{/if}}
 
 
-<h2>View Most Recent Interview Questions</h2>
 {{#if loggedIn}}
+<div class="column ">
+    <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
+    {{#each posts as |post|}}
+    <li>
     {{> post-info post}}
-  </li>
-  {{/each}}
+    </li>
+    {{/each}}
 </ol>
+</div>
 {{/if}}
 
 
