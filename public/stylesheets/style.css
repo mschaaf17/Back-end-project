@@ -16,6 +16,9 @@ header {
     background-size: cover;
 }
 
+a {
+    color: black;
+}
 h1 {
     padding: 2%;
     font-size: 36px;
@@ -53,22 +56,40 @@ li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: blue;
+    
 }
 
 h2 {
-    border: black;
-    background-color:darkslategray;
     padding: 2%;
 }
 h4{
     width: 70%;
 }
 
-
-
 .column {
     margin: 5%;
 }
-
 /* LEFT COLUMN SECTION HOMEPAGE */
+
+
+/* RIGHT COLUMN SECTION HOMEPAGE */
+form {
+    border: 5px black ;
+    border-radius: 0%;
+    padding: 2%;
+    background-color: wheat;
+}
+
+#rightside {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.login-form .signup-form {
+    
+}
+
+
+/* RIGHT COLUMN SECTION HOMEPAGE */
+
+/* MIN WIDTH HAS TO BE 400PX */
