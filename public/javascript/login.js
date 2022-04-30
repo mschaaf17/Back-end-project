@@ -13,9 +13,11 @@ async function loginFormHandler(event) {
         email,
         password,
       }),
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" }
     });
 
+    const result = await response.json()
+    console.log(result)
     if (response.ok) {
       document.location.replace("/dashboard/");
     } else {
@@ -39,9 +41,11 @@ async function signupFormHandler(event) {
         email,
         password,
       }),
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" }
     });
 
+    const result =await response.json()
+    console.log(result)
     if (response.ok) {
       document.location.replace("/dashboard/");
     } else {
