@@ -1,16 +1,18 @@
 <main class="columns">
     <div class="column">
-        <header class="content-titles">
-            <h2>
-                Welcome to Code Prep!
-            </h2>
-        </header>
-        <div class="content">
-            <h4>
-                Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
-                interview questions, algorithms, or other fun challenges.
-            </h4>
-        </div>
+        <form class="left-form">
+            <div class="content">
+                <h2>
+                    Welcome to Code Prep!
+                </h2>
+            </div>
+            <div class="content">
+                <h5>
+                    Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
+                    interview questions, algorithms, or other fun challenges.
+                </h5>
+            </div>
+        </form>
     </div>
 
 {{#if loggedIn}}
@@ -28,7 +30,7 @@
 {{else}}
 
     <div class="column content" id="rightside"> 
-        <form class="login-form column ">
+        <form class="login-form column right-form">
             <div>
                 <h2>Login</h2>
                 <div>
@@ -45,7 +47,7 @@
             </div>
         </form>
 
-        <form class="signup-form column ">
+        <form class="signup-form column right-form">
             <div>
                 <h2>Sign Up</h2>
                 <div>
