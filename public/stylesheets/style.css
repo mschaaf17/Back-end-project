@@ -22,7 +22,6 @@ a {
 h1 {
     padding: 2%;
     font-size: 36px;
-    color: var(--darkreader-text--primary-color);
     text-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
     display: block;
     font-weight: bold;
@@ -79,6 +78,7 @@ h5{
 /* LEFT COLUMN SECTION HOMEPAGE */
 
 
+
 /* RIGHT COLUMN SECTION HOMEPAGE */
 #rightside {
     align-items: flex-start;
@@ -102,6 +102,46 @@ button {
 /* RIGHT COLUMN SECTION HOMEPAGE */
 
 
+form {
+    background-color: wheat;
+    border: solid 3px darkolivegreen;
+    padding: 20px;
+    color: darkolivegreen;
+    width: 100%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+
+
+
+/* DASHBOARD */
+section {
+    justify-content: space-between;
+    background-color: wheat;
+    border: solid 3px darkolivegreen;
+    padding: 20px;
+    color: darkolivegreen;
+    
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+
+/* DASHBOARD */
+
+
+
+
+
+/* DASHBOARD RIGHT SIDE */
+
+/* DASHBOARD RIGHT SIDE */
+
+
+
 footer {
     padding: 10px;
     position:absolute;
@@ -113,29 +153,5 @@ footer {
     color: black;
     font-size: 24px;
 }
-
-
-/* DASHBOARD LEFT SIDE */
-form {
-    background-color: wheat;
-    border: solid 3px darkolivegreen;
-    padding: 20px;
-    color: darkolivegreen;
-    width: 100%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    border-radius: 15px;
-}
-/* DASHBOARD LEFT SIDE */
-
-
-
-
-
-/* DASHBOARD RIGHT SIDE */
-
-/* DASHBOARD RIGHT SIDE */
-
-
 
 /* MIN WIDTH HAS TO BE 400PX */

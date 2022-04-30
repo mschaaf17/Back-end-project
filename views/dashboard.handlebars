@@ -1,20 +1,19 @@
-<section>
-    <h2>Have something to share?</h2>
-
-    <form class="new-question-form">
+<div class="columns">
+    <form class="new-question-form column ">
+      <div>
+        <h2>Have something to share?</h2>
+      </div>
         <div>
             <label for="question-title">Title</label>
             <input type="text" id="question-title" name="question-title" />
         </div>
-        {{!-- THIS IS THE ADD YOUR OWN QUESTION SECTION INSTEAD OF CLICKING ON A LINK IT WOULD PROBABLY BE EASIER TO JUST HAVE THE INPUT FIELDS SHOWING ALREADY IN THAT COL --}}
         <div>
             <label for="question-url">Content</label>
             <input id="question-url" name="question-url" />
         </div>
         <button type="submit" class="btn">Create</button>
     </form>
-</section>
-
+    
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
@@ -31,7 +30,7 @@
 
 
 {{#if loggedIn}}
-<div class="column ">
+<section class="column ">
     <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
     {{#each posts as |post|}}
@@ -40,12 +39,9 @@
     </li>
     {{/each}}
 </ol>
-</div>
+</section>
 {{/if}}
-
-
-
-
+</div>
 
 
 <script src="/javascript/add-question.js"></script>
