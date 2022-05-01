@@ -76,50 +76,66 @@ h5{
     margin: 5%;
 }
 
-.left-form {
-
-    border: 5px black ;
-    border-radius: 0%;
-    padding: 2%;
-    background-color: wheat;
-    border: solid 3px var(--secondary-color);
-    padding: 20px;
-    color: var(--secondary-color);
-    
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    border-radius: 15px;
-
-}
-
 /* LEFT COLUMN SECTION HOMEPAGE */
 
 
 /* RIGHT COLUMN SECTION HOMEPAGE */
-.right-form {
-    border: 5px black ;
-    border-radius: 0%;
-    padding: 2%;
-    background-color: wheat;
-    border: solid 3px var(--secondary-color);
-    padding: 20px;
-    color: var(--secondary-color);
-    width: 60%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    border-radius: 15px;
-}
-
 #rightside {
     align-items: flex-start;
     text-align: left;
 }
 
-.login-form .signup-form {
-    
+
+button {
+    color: wheat;
+    background-color: darkolivegreen;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor:pointer;
+}
+
+/* RIGHT COLUMN SECTION HOMEPAGE */
+
+
+footer {
+    padding: 10px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background:gray;
+    text-align: center;
+    color: black;
+    font-size: 24px;
 }
 
 
-/* RIGHT COLUMN SECTION HOMEPAGE */
+/* DASHBOARD LEFT SIDE */
+form {
+    background-color: wheat;
+    border: solid 3px darkolivegreen;
+    padding: 20px;
+    color: darkolivegreen;
+    width: 100%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+/* DASHBOARD LEFT SIDE */
+
+
+
+
+
+/* DASHBOARD RIGHT SIDE */
+
+/* DASHBOARD RIGHT SIDE */
+
+
 
 /* MIN WIDTH HAS TO BE 400PX */
