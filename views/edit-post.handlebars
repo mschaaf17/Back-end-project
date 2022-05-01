@@ -1,12 +1,13 @@
-<article>
+<article >
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
+  <div class="columns">
+    <form class="edit-post-form edit-post-hb column">
+      <h2>
+      Edit Post
+      </h2>
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name = "content-info" type="text" value="{{post.post_text}}"/>
+      <input class="input" name="post-title" type="text" value="{{post.title}}" />
+      <input class="textarea" name = "content-info" type="text" value="{{post.post_text}}"/>
     </div>
     <div>
       {{post.likes}} {{format_plural "point" post.likes}} by you on {{format_date post.created_at}}
@@ -16,17 +17,19 @@
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
   </form>
-</article>
-
-<form class="comment-form">
+  <form class="comment-form edit-post-hb column">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea name="comment-body textarea"></textarea>
   </div>
 
   <div>
     <button type="submit">add comment</button>
   </div>
 </form>
+  </div>
+</article>
+
+
 
 {{> comments post.comments}}
 
