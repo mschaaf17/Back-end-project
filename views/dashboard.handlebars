@@ -1,5 +1,5 @@
 <div class="columns">
-    <section class="new-question-form column ">
+    <form class="new-question-form column cards">
       <div class="posts">
         <div>
         <h2>Have something to share?</h2>
@@ -15,9 +15,9 @@
         </div>
         <button type="submit" class="btn">Create</button>
       </div>
-    </section>
+    </form>
 {{#if posts.length}}
-<section class="column">
+<section class="column cards">
   <div class="posts">
     <h2>Your Posts</h2>
   <ol>
@@ -35,7 +35,7 @@
 
 
 {{#if loggedIn}}
-<section class="column ">
+<section class="column cards">
   <div class="posts">
         <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
