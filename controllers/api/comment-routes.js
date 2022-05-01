@@ -18,9 +18,9 @@ router.get('/:id', (req, res) => {
         }
     })
     .then(dbCommentData => {
-   if(!dbCommentData) {
-       res.status(404).json({message: 'No comments found with this id'})
-       return
+    if(!dbCommentData) {
+        res.status(404).json({message: 'No comments found with this id'})
+        return
     }
     res.json(dbCommentData)
 })

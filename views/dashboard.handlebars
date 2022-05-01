@@ -1,37 +1,43 @@
 <div class="columns">
-    <form class="new-question-form column ">
-      <div>
+    <section class="new-question-form column ">
+      <div class="posts">
+        <div>
         <h2>Have something to share?</h2>
       </div>
         <div>
-            <label for="question-title">Title</label>
-            <input type="text" id="question-title" name="question-title" />
+            <label for="question-title">Title:</label>
+            <input class="input" type="text" id="question-title" name="question-title" />
         </div>
+        
         <div>
-            <label for="question-url">Content</label>
-            <input id="question-url" name="question-url" />
+            <label for="question-url">Content:</label>
+            <input class="textarea" id="question-url" name="question-url" />
         </div>
         <button type="submit" class="btn">Create</button>
-    </form>
-    
+      </div>
+    </section>
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
+<section class="column">
+  <div class="posts">
+    <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <br>
+      <a  href="/dashboard/edit/{{post.id}}" class="edit-link button">Edit post</a>
     </li>
     {{/each}}
   </ol>
+  </div>
 </section>
 {{/if}}
 
 
 {{#if loggedIn}}
 <section class="column ">
-    <h2>View Most Recent Interview Questions</h2>
+  <div class="posts">
+        <h2>View Most Recent Interview Questions</h2>
 <ol class="post-list">
     {{#each posts as |post|}}
     <li>
@@ -41,6 +47,7 @@
 </ol>
 </section>
 {{/if}}
+  </div>
 </div>
 
 

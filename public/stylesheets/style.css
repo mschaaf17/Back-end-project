@@ -118,28 +118,45 @@ form {
 
 /* DASHBOARD */
 section {
-    justify-content: space-between;
     background-color: wheat;
     border: solid 3px darkolivegreen;
-    padding: 20px;
     color: darkolivegreen;
-    
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     border-radius: 15px;
 }
 
+.posts {
+    padding: 10%;
+}
+
 
 /* DASHBOARD */
+.title a {
+    font-size: 18px;
+}
 
+p {
+    font-size: 16px;
+}
 
+.meta {
+    font-size: 12px;
+}
 
+section li {
+    margin: 5px;
+}
 
+.button {
+    max-height: 24px;
+    margin-bottom: 10px;
+}
 
-/* DASHBOARD RIGHT SIDE */
-
-/* DASHBOARD RIGHT SIDE */
-
+section h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
 
 
 footer {
@@ -153,5 +170,26 @@ footer {
     color: black;
     font-size: 24px;
 }
+
+
+/* EDIT POST HANDLEBARS STYLE */
+article h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.edit-post-hb {
+    width: 50%;
+}
+
+article form div {
+    margin: 20px;
+}
+
+article input {
+    margin-bottom: 20px;
+}
+
+
+/* EDIT POST HANDLEBARS STYLE */
 
 /* MIN WIDTH HAS TO BE 400PX */

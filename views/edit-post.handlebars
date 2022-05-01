@@ -3,10 +3,10 @@
   <h2>
     Edit Post
   </h2>
-  <form class="edit-post-form">
+  <form class="edit-post-form edit-post-hb ">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name = "content-info" type="text" value="{{post.post_text}}"/>
+      <input class="input" name="post-title" type="text" value="{{post.title}}" />
+      <input class="textarea" name = "content-info" type="text" value="{{post.post_text}}"/>
     </div>
     <div>
       {{post.likes}} {{format_plural "point" post.likes}} by you on {{format_date post.created_at}}
@@ -18,7 +18,7 @@
   </form>
 </article>
 
-<form class="comment-form">
+<form class="comment-form edit-post-hb">
   <div>
     <textarea name="comment-body"></textarea>
   </div>
