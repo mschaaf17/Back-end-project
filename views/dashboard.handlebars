@@ -37,11 +37,11 @@
 {{#if loggedIn}}
 <section class="column cards">
   <div class="posts">
-        <h2>View Most Recent Interview Questions</h2>
+        <h2>Your Liked Posts</h2>
 <ol class="post-list">
-    {{#each posts as |post|}}
+    {{#each liked_posts as |likes|}}
     <li>
-    {{> post-info post}}
+    {{> post-info likes}}
     </li>
     {{/each}}
 </ol>

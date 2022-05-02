@@ -15,31 +15,38 @@ Post.belongsTo(User, {
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
-
 User.belongsToMany(Post, {
   through: Likes,
-  as: "liked_posts",
+ // as: "liked_posts",
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
 
-Likes.belongsTo(User, {
-  foreignKey: "user_id",
-  onDelete: "SET NULL",
-});
 
-Likes.belongsTo(Post, {
+Post.belongsToMany(User, {
+  through: Likes,
+ // as: "liked_posts",
   foreignKey: "post_id",
   onDelete: "SET NULL",
 });
 
-User.hasMany(Likes, {
-  foreignKey: "user_id",
-});
+// Likes.belongsTo(User, {
+//   foreignKey: "user_id",
+//   onDelete: "SET NULL",
+// });
 
-Post.hasMany(Likes, {
-  foreignKey: "post_id",
-});
+// Likes.belongsTo(Post, {
+//   foreignKey: "post_id",
+//   onDelete: "SET NULL",
+// });
+
+// User.hasMany(Likes, {
+//   foreignKey: "user_id",
+// });
+
+// Post.hasMany(Likes, {
+//   foreignKey: "post_id",
+// });
 
 Comment.belongsTo(User, {
   foreignKey: "user_id",
