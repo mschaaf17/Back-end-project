@@ -43,18 +43,18 @@ router.get("/", withAuth, (req, res) => {
       console.log(posts)
       const liked_posts_data= await User.findOne({where: {id: req.session.user_id}, include: [
        { model: Post, through: Likes, 
-      //   attributes: [
-      //   "id",
-      //   "post_text",
-      //   "title",
-      //   "created_at",
-      //   [
+        attributes: [
+        "id",
+        "post_text",
+        "title",
+        "created_at",
+      //  [
       //     sequelize.literal(
       //       "(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)"
       //     ),
       //     "likes_count",
       //   ],
-      // ],
+       ],
          include: [{
         model: Comment,
         attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
