@@ -10,7 +10,7 @@
       <input class="textarea" name = "content-info" type="text" value="{{post.post_text}}"/>
     </div>
     <div>
-      {{post.likes}} {{format_plural "point" post.likes}} by you on {{format_date post.created_at}}
+      {{post.liked_posts}} {{format_plural "like" post.liked_posts}} by you on {{format_date post.created_at}}
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
