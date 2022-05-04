@@ -126,7 +126,7 @@ form {
 }
 
 .likes {
-    color: lightseagreen;
+    color: rgb(15, 125, 125);
 }
 
 
@@ -135,7 +135,7 @@ form {
 .cards {
     background-color: lightgrey;
     border: solid 3px lightseagreen;
-    color: lightseagreen;
+    color: rgb(15, 125, 125);
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     border-radius: 15px;
