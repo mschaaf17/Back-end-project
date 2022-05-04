@@ -173,7 +173,9 @@ p {
 
 /* EDIT POST HANDLEBARS STYLE */
 
-
+article {
+    padding: 50px;
+}
 
 article h2 {
     font-size: 24px;
@@ -193,6 +195,15 @@ article input {
 
 .comment-form {
     margin-bottom: 20px;
+    width: auto;
+
+}
+#comment-body{
+    min-width: 100%;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* EDIT POST HANDLEBARS STYLE */
