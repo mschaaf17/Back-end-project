@@ -38,39 +38,58 @@ router.get("/", withAuth, (req, res) => {
       },
     ],
   })
-    .then(async(dbPostData) => {
+    .then(async (dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      console.log(posts)
-      const liked_posts_data= await User.findOne({where: {id: req.session.user_id}, include: [
-       { model: Post, through: Likes, 
-        attributes: [
-        "id",
-        "post_text",
-        "title",
-        "created_at",
-      //  [
-      //     sequelize.literal(
-      //       "(SELECT COUNT(*) FROM likes WHERE post.id = likes.post_id)"
-      //     ),
-      //     "likes_count",
-      //   ],
-       ],
-         include: [{
-        model: Comment,
-        attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
-        include: {
-          model: User,
-          attributes: ["username"],
-        },
-      },
-      {
-        model: User,
-        attributes: ["username"],
-      },] }
-      ]})
-      const liked_posts = liked_posts_data.get({plain: true})
-      console.log(liked_posts)
-      res.render("dashboard", { posts, liked_posts: liked_posts.posts, loggedIn: true });
+      console.log(posts);
+
+      const liked_posts_data = await User.findOne({
+        where: { id: req.session.user_id },
+        include: [
+          {
+            model: Post,
+            through: Likes,
+            attributes: [
+              "id",
+              "post_text",
+              "title",
+              "created_at",
+              [
+                sequelize.literal(
+                  "(SELECT COUNT(*) FROM likes WHERE posts.id = likes.post_id)"
+                ),
+                "likes_count",
+              ],
+            ],
+            include: [
+              {
+                model: Comment,
+                attributes: [
+                  "id",
+                  "comment_text",
+                  "post_id",
+                  "user_id",
+                  "created_at",
+                ],
+                include: {
+                  model: User,
+                  attributes: ["username"],
+                },
+              },
+              {
+                model: User,
+                attributes: ["username"],
+              },
+            ],
+          },
+        ],
+      });
+      const liked_posts = liked_posts_data.get({ plain: true });
+      console.log(liked_posts);
+      res.render("dashboard", {
+        posts,
+        liked_posts: liked_posts.posts,
+        loggedIn: true,
+      });
     })
     .catch((err) => {
       console.log(err);
