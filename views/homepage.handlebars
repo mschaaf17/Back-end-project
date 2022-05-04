@@ -8,28 +8,29 @@
             </div>
             <div class="content">
                 <h5>
-                    Code prep is a collaborative platform for you to for you to practice your coding skills. These can be
+                    Code prep is a collaborative platform for you to for you to practice your coding skills. These can
+                    be
                     interview questions, algorithms, or other fun challenges.
                 </h5>
             </div>
         </form>
     </div>
 
-{{#if loggedIn}}
-<div class="column ">
-    <h2>View Most Recent Interview Questions</h2>
-<ol class="post-list">
-    {{#each posts as |post|}}
-    <li>
-    {{> post-info post}}
-    </li>
-    {{/each}}
-</ol>
-</div>
+    {{#if loggedIn}}
+    <div class="column tall">
+        <h2>View Most Recent Interview Questions</h2>
+        <ol class="post-list">
+            {{#each posts as |post|}}
+            <li>
+                {{> post-info post}}
+            </li>
+            {{/each}}
+        </ol>
+    </div>
 
-{{else}}
+    {{else}}
 
-    <div class="column content" id="rightside"> 
+    <div class="column content" id="rightside">
         <form class="login-form column right-form">
             <div>
                 <h2>Login</h2>
@@ -66,13 +67,11 @@
                     <button type="submit">Sign Up</button>
                 </div>
             </div>
-            
+
         </form>
     </div>
 </main>
 
-<script src ="/javascript/login.js"></script>
+<script src="/javascript/login.js"></script>
 
 {{/if}}
-
-

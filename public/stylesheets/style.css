@@ -16,6 +16,7 @@ header {
     background-size: cover;
 }
 
+
 a {
     color: black;
 }
@@ -164,6 +165,10 @@ p {
     color: darkolivegreen;
 }
 
+.tall {
+    min-height: 100vh;
+}
+
 
 
 /* EDIT POST HANDLEBARS STYLE */
@@ -196,7 +201,8 @@ article input {
 
 footer {
     padding: 10px;
-    position:absolute;
+    position: sticky;
+    position:-webkit-sticky;
     bottom:0;
     width:100%;
     height:60px;
