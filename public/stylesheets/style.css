@@ -125,6 +125,17 @@ form {
     border-radius: 15px;
 }
 
+.likes {
+    color: lightseagreen;
+}
+
+.post-title {
+    color: black;
+}
+
+.post-title:hover {
+    color: lightseagreen;
+}
 
 
 
@@ -141,6 +152,7 @@ form {
 .posts {
     padding: 10%;
 }
+
 
 
 /* DASHBOARD */
