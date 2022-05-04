@@ -7,7 +7,7 @@
 /* HEADER AND NAV BAR SECTION */
 header {
     align-items: baseline;
-    background-image: url("../stylesheets/images/header.PNG");
+    background-image: url("../stylesheets/images/header1.PNG");
     width: 100%;
     display: flex;
     justify-content: space-between;
