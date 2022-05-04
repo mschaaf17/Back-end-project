@@ -22,7 +22,6 @@ a {
 h1 {
     padding: 2%;
     font-size: 36px;
-    color: var(--darkreader-text--primary-color);
     text-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
     display: block;
     font-weight: bold;
@@ -79,6 +78,7 @@ h5{
 /* LEFT COLUMN SECTION HOMEPAGE */
 
 
+
 /* RIGHT COLUMN SECTION HOMEPAGE */
 #rightside {
     align-items: flex-start;
@@ -102,6 +102,98 @@ button {
 /* RIGHT COLUMN SECTION HOMEPAGE */
 
 
+form {
+    background-color: wheat;
+    border: solid 3px darkolivegreen;
+    padding: 20px;
+    color: darkolivegreen;
+    width: 100%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+
+
+
+/* DASHBOARD */
+.cards {
+    background-color: wheat;
+    border: solid 3px darkolivegreen;
+    color: darkolivegreen;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+.posts {
+    padding: 10%;
+}
+
+
+/* DASHBOARD */
+.title a {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.meta {
+    font-size: 12px;
+}
+
+.cards li {
+    margin: 5px;
+}
+
+.button {
+    max-height: 24px;
+    margin-bottom: 10px;
+}
+
+.cards h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+/* CAREER HANDLEBARS STYLE */
+.career-text {
+    color: darkolivegreen;
+}
+
+
+
+/* EDIT POST HANDLEBARS STYLE */
+
+
+
+article h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.edit-post-hb {
+    width: 50%;
+}
+
+article form div {
+    margin: 20px;
+}
+
+article input {
+    margin-bottom: 20px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+/* EDIT POST HANDLEBARS STYLE */
+
+/* MIN WIDTH HAS TO BE 400PX */
+
 footer {
     padding: 10px;
     position:absolute;
@@ -113,29 +205,3 @@ footer {
     color: black;
     font-size: 24px;
 }
-
-
-/* DASHBOARD LEFT SIDE */
-form {
-    background-color: wheat;
-    border: solid 3px darkolivegreen;
-    padding: 20px;
-    color: darkolivegreen;
-    width: 100%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    border-radius: 15px;
-}
-/* DASHBOARD LEFT SIDE */
-
-
-
-
-
-/* DASHBOARD RIGHT SIDE */
-
-/* DASHBOARD RIGHT SIDE */
-
-
-
-/* MIN WIDTH HAS TO BE 400PX */
