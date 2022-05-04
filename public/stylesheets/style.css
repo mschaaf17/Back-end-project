@@ -182,8 +182,7 @@ p {
     cursor:pointer;
 }
 .button:hover {
-    background-color: 
-    rgb(15, 125, 125);
+    background-color:  rgb(15, 125, 125);
 }
 
 .cards h2 {
@@ -194,7 +193,10 @@ p {
 
 /* CAREER HANDLEBARS STYLE */
 .career-text {
-    color: lightseagreen;
+    color: rgb(15, 125, 125);
+}
+.career-text:hover {
+   color: black;
 }
 
 .tall {
