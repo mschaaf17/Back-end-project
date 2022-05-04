@@ -7,7 +7,7 @@
       </h2>
       <div>
         <input class="input" name="post-title" type="text" value="{{post.title}}" />
-        <input class="textarea" name="content-info" type="text" value="{{post.post_text}}" />
+        <input class="text-area" name="content-info" type="text" value="{{post.post_text}}" />
       </div>
       <div>
         {{post.liked_posts}} {{format_plural "like" post.liked_posts}} by you on {{format_date post.created_at}}
@@ -19,7 +19,7 @@
     </form>
     <form class="comment-form edit-post-hb column">
       <div>
-        <textarea name="comment-body textarea"></textarea>
+        <textarea class="text-area" name="comment-body textarea"></textarea>
       </div>
 
       <div>

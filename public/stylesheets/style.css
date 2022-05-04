@@ -19,6 +19,7 @@ header {
 
 a {
     color: black;
+    padding: 50px;
 }
 h1 {
     padding: 2%;
@@ -167,6 +168,19 @@ p {
 
 .tall {
     min-height: 100vh;
+}
+
+.text-area{
+    overflow-wrap: normal;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-area:hover{
+    border: 1px solid rgb(155, 155, 155);
 }
 
 
