@@ -16,8 +16,10 @@ header {
     background-size: cover;
 }
 
+
 a {
     color: black;
+    padding: 50px;
 }
 h1 {
     padding: 2%;
@@ -164,11 +166,30 @@ p {
     color: darkolivegreen;
 }
 
+.tall {
+    min-height: 100vh;
+}
+
+.text-area{
+    overflow-wrap: normal;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-area:hover{
+    border: 1px solid rgb(155, 155, 155);
+}
+
 
 
 /* EDIT POST HANDLEBARS STYLE */
 
-
+article {
+    padding: 50px;
+}
 
 article h2 {
     font-size: 24px;
@@ -188,6 +209,15 @@ article input {
 
 .comment-form {
     margin-bottom: 20px;
+    width: auto;
+
+}
+#comment-body{
+    min-width: 100%;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* EDIT POST HANDLEBARS STYLE */
@@ -196,7 +226,8 @@ article input {
 
 footer {
     padding: 10px;
-    position:absolute;
+    position: sticky;
+    position:-webkit-sticky;
     bottom:0;
     width:100%;
     height:60px;

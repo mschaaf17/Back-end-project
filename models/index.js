@@ -30,23 +30,23 @@ Post.belongsToMany(User, {
   onDelete: "SET NULL",
 });
 
-// Likes.belongsTo(User, {
-//   foreignKey: "user_id",
-//   onDelete: "SET NULL",
-// });
+Likes.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
+});
 
-// Likes.belongsTo(Post, {
-//   foreignKey: "post_id",
-//   onDelete: "SET NULL",
-// });
+Likes.belongsTo(Post, {
+  foreignKey: "post_id",
+  onDelete: "SET NULL",
+});
 
-// User.hasMany(Likes, {
-//   foreignKey: "user_id",
-// });
+User.hasMany(Likes, {
+  foreignKey: "user_id",
+});
 
-// Post.hasMany(Likes, {
-//   foreignKey: "post_id",
-// });
+Post.hasMany(Likes, {
+  foreignKey: "post_id",
+});
 
 Comment.belongsTo(User, {
   foreignKey: "user_id",
