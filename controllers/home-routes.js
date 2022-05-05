@@ -24,6 +24,7 @@ router.get("/", (req, res) => {
         "likes_count",
       ],
     ],
+    order: [["created_at", "DESC"]],
     include: [
       {
         model: Comment,
