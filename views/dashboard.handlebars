@@ -1,5 +1,5 @@
 <div class="columns tall">
-    <form class="new-question-form column cards mx-3">
+    <form class="new-question-form column cards ">
       <div class="posts">
         <div>
         <h2>Have something to share?</h2>
@@ -22,7 +22,7 @@
     <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
-    <li>
+    <li class="comments-posts">
       {{> post-info post}}
       <br>
       <a  href="/dashboard/edit/{{post.id}}" class="edit-link button">Edit post</a>
@@ -40,7 +40,7 @@
         <h2>Your Liked Posts</h2>
 <ol class="post-list">
     {{#each liked_posts as |likes|}}
-    <li>
+    <li class="comments-posts">
     {{> post-info likes}}
     </li>
     {{/each}}

@@ -19,7 +19,7 @@ header {
 
 a {
     color: black;
-    padding: 50px;
+    
 }
 h1 {
     padding: 2%;
@@ -129,7 +129,7 @@ form {
 }
 
 .posts {
-    padding: 10%;
+    padding: 5%;
 }
 
 
@@ -187,9 +187,10 @@ p {
 
 /* EDIT POST HANDLEBARS STYLE */
 
-article {
-    padding: 50px;
+.comments-posts {
+    border: solid black 3px;
 }
+
 
 article h2 {
     font-size: 24px;
@@ -209,8 +210,6 @@ article input {
 
 .comment-form {
     margin-bottom: 20px;
-    width: auto;
-
 }
 #comment-body{
     min-width: 100%;
