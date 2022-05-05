@@ -133,7 +133,7 @@ form {
 
 /* DASHBOARD */
 .cards {
-    background-color: rgb(184, 185, 184);
+    background-color: lightgray;
     border: solid 3px lightseagreen;
     color: rgb(15, 125, 125);
     margin: 3.5%;
