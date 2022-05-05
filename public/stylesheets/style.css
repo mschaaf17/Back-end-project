@@ -118,7 +118,7 @@ form {
     background-color: lightgrey;
     border: solid 3px lightseagreen;
     padding: 20px;
-    color: lightseagreen;
+    color: rgb(15, 125, 125);
     width: 100%;
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
@@ -197,6 +197,19 @@ p {
 }
 .career-text:hover {
    color: black;
+}
+.tips {
+    background-color: lightgrey;
+    border: solid 3px lightseagreen;
+    color: rgb(15, 125, 125);
+    margin: 100px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+    padding: 80px;
+
+}
+.employable {
+    font-size: 20px;
 }
 
 .tall {
