@@ -129,13 +129,25 @@ form {
 }
 
 .posts {
-    padding: 10%;
+    padding: 5%;
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* DASHBOARD */
-.title a {
+.title {
     font-size: 18px;
+    width: 80%;
+    /* border: 2px solid salmon; */
+}
+
+.title h3{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 p {
@@ -188,7 +200,7 @@ p {
 /* EDIT POST HANDLEBARS STYLE */
 
 article {
-    padding: 50px;
+    padding: 5px;
 }
 
 article h2 {

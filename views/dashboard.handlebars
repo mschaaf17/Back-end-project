@@ -1,53 +1,53 @@
 <div class="columns tall">
-    <form class="new-question-form column cards">
-      <div class="posts">
-        <div>
+  <form class="new-question-form column cards">
+    <div class="posts">
+      <div>
         <h2>Have something to share?</h2>
       </div>
-        <div>
-            <label for="question-title">Title:</label>
-            <input class="input" type="text" id="question-title" name="question-title" />
-        </div>
-        
-        <div>
-            <label for="question-url">Content:</label>
-            <input class="textarea" id="question-url" name="question-url" />
-        </div>
-        <button type="submit" class="btn">Create</button>
+      <div>
+        <label for="question-title">Title:</label>
+        <input class="input" type="text" id="question-title" name="question-title" />
       </div>
-    </form>
-{{#if posts.length}}
-<section class="column cards">
-  <div class="posts">
-    <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <br>
-      <a  href="/dashboard/edit/{{post.id}}" class="edit-link button">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-  </div>
-</section>
-{{/if}}
+
+      <div>
+        <label for="question-url">Content:</label>
+        <input class="textarea" id="question-url" name="question-url" />
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </div>
+  </form>
+  {{#if posts.length}}
+  <section class="column cards">
+    <div class="posts">
+      <h2>Your Posts</h2>
+      <ul>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+          <br>
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link button">Edit post</a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+  {{/if}}
 
 
-{{#if liked_posts.length}}
-<section class="column cards">
-  <div class="posts">
-        <h2>Your Liked Posts</h2>
-<ol class="post-list">
-    {{#each liked_posts as |likes|}}
-    <li>
-    {{> post-info likes}}
-    </li>
-    {{/each}}
-</ol>
-</section>
-{{/if}}
-  </div>
+  {{#if liked_posts.length}}
+  <section class="column cards">
+    <div class="posts">
+      <h2>Your Liked Posts</h2>
+      <ul class="post-list">
+        {{#each liked_posts as |likes|}}
+        <li>
+          {{> post-info likes}}
+        </li>
+        {{/each}}
+      </ul>
+  </section>
+  {{/if}}
+</div>
 </div>
 
 
