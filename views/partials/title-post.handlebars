@@ -1,13 +1,19 @@
-<article class="post">
-  <div class="title">
-    <a href ="/post/{{id}}" target="_blank">{{title}}</a>
-    <p>{{post_text}}</p>
-  </div>
-  <div class="meta">
-    {{likes_count}} {{format_plural "like" likes_count}} by {{user.username}} on {{format_date created_at}}
-   
+<article class="post ">
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <div>
+    <div class="title">
+        <a href ="/post/{{id}}" target="_blank">{{title}}</a>
+        <p>{{post_text}}</p>
+      </div>
+      <div class="meta">
+        {{likes_count}} {{format_plural "like" likes_count}} by {{user.username}} on {{format_date created_at}}
+      
 
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        |
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+      </div>
+      {{> comments post.comments}}
   </div>
+
+  
 </article>

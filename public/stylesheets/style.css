@@ -235,3 +235,15 @@ footer {
     color: black;
     font-size: 24px;
 }
+
+/* QUESTIONS HBS */
+.question-hbs {
+    width: 50%;
+}
+
+.title-comment-post {
+    margin: 4%;
+}
+/* QUESTIONS HBS */
+
+
