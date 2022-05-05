@@ -1,21 +1,26 @@
-{{> title-post post}}
+<div class="title-comment-post">
+    {{> title-post post}}
 
-
+    {{> comments post.comments}}
+</div>
 
 {{#if loggedIn}}
-<form class="comment-form">
-    <div>
-        <textarea id="comment-body" name="comment-body"></textarea>
-    </div>
 
-    <div>
-        <button type="submit">add comment</button>
-        <button type="button" class="like-btn">like</button>
-    </div>
-</form>
+    <form class="comment-form question-hbs">
+        <div>
+            <textarea id="comment-body" name="comment-body"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">add comment</button>
+            <button type="button" class="like-btn">like</button>
+        </div>
+    </form>
+
+
 {{/if}}
 
-{{> comments post.comments}}
+
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
