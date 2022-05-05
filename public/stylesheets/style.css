@@ -94,7 +94,7 @@ h5{
 
 
 button {
-    color: lightgrey;
+    color: white;
     background-color: lightseagreen;
     margin: 10px;
     padding: 5px;
@@ -133,7 +133,7 @@ form {
 
 /* DASHBOARD */
 .cards {
-    background-color: lightgrey;
+    background-color: rgb(184, 185, 184);
     border: solid 3px lightseagreen;
     color: rgb(15, 125, 125);
     margin: 3.5%;
@@ -153,7 +153,7 @@ form {
     color: black;
 }
 .title a:hover {
-    color: lightseagreen;
+    color: rgb(15, 125, 125);
 }
 
 p {
@@ -189,6 +189,8 @@ p {
     font-size: 24px;
     font-weight: bolder;
 }
+
+
 
 
 /* CAREER HANDLEBARS STYLE */
