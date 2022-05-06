@@ -3,9 +3,9 @@
 ## Table of Contents
 * [Description](#description)
 * [Deployed Application](#deployed-application)
-* [Installation](#installation)
-* [Contribution](#contribution)
 * [Usage](#usage)
+* [Installation](#installation)
+* [Contributors](#contributors)
 * [GitHub](#github-profile)
 * [Contact Me](#for-any-questions-contact)
 
