@@ -17,19 +17,17 @@ Post.belongsTo(User, {
 });
 User.belongsToMany(Post, {
   through: Likes,
- // as: "liked_posts",
+  // as: "liked_posts",
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
 
-
 Post.belongsToMany(User, {
   through: Likes,
- // as: "liked_posts",
+  // as: "liked_posts",
   foreignKey: "post_id",
   onDelete: "SET NULL",
 });
-
 
 Comment.belongsTo(User, {
   foreignKey: "user_id",

@@ -151,7 +151,7 @@ form {
 .title {
     font-size: 18px;
     width: 80%;
-    /* border: 2px solid salmon; */
+    
 }
 
 
@@ -226,7 +226,7 @@ p {
 /* EDIT POST HANDLEBARS STYLE */
 
 .comments-posts {
-    border: solid black 3px;
+    border: solid lightgray 3px;
 }
 
 
