@@ -12,8 +12,8 @@
 ## Description:
 An application that allows full stack developers to interact with others in order to be better prepared for job interviews. 
 *Built with: Node.js, Javascript, MySQL2, Sequelize, and other npm packages.
-![image](https://user-images.githubusercontent.com/97362296/166158544-215715ca-2fcd-470f-b6d4-22acf7bccc49.png)
-![image](https://user-images.githubusercontent.com/97362296/166158581-49781998-f292-44d9-bccf-6bc644e7ea74.png)
+![image](https://user-images.githubusercontent.com/97362296/167168343-d4006238-013b-4582-bb22-841202a06751.png)
+![image](https://user-images.githubusercontent.com/97362296/167168416-2bb243a0-9c41-47c4-9efb-e2ffb6ede745.png)
 
 
 
