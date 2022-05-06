@@ -1,14 +1,12 @@
 <div class="comments text-left">
-  {{#each this}}
-    <section class="comment pt-5">
-      <div class="meta">
-        {{user.username}}
-        on
-        {{format_date created_at}}
-      </div>
-      <div class="text is-italic">
+    {{#each this}}
+    <section class="comment pt-5 ">
+        <div class="meta">
+        {{user.username}} on {{format_date created_at}}
+        </div>
+        <div class="text is-italic">
         {{comment_text}}
-      </div>
+        </div>
     </section>
-  {{/each}}
+    {{/each}}
 </div>

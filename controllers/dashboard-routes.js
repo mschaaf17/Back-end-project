@@ -70,7 +70,7 @@ router.get("/", withAuth, (req, res) => {
                   "comment_text",
                   "post_id",
                   "user_id",
-                  "createdf_at",
+                  "created_at",
                 ],
                 include: {
                   model: User,

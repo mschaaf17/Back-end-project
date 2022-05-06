@@ -1,66 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="text/javascript"
-      src="//d5k1a84rm5hwo.cloudfront.net/partnerapi.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="//d5k1a84rm5hwo.cloudfront.net/partnerapi.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
+    
     <title>Code Prep</title>
     <link rel="shortcut icon" href="/stylesheets/images/logo.ico" />
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper">
-      <header class="pt-5 pl-2">
-        <h1 class="code-prep">
-          {{#if loggedIn}}
-            <a href="/">Code Prep</a>
-          {{else}}
-            <a is-size-href="/login">Code Prep</a>
-          {{/if}}
-        </h1>
+<body>
+  <div class ='wrapper'>
+    <header class="pt-5 pl-2">
+      <h1 class="code-prep">
+        {{#if loggedIn}}
+        <a href="/">Code Prep</a>
+        {{else}}
+        <a is-size-href="/login">Code Prep</a>
+        {{/if}}
+      </h1>
+      
+      <nav>
+        {{#if loggedIn}}
+        <ul>
+          <li>
+            <a href ="/dashboard">Dashboard </a>
+          </li>
+          <li>
+            <a href ="/career">Career Prep</a>
+          </li>
+          <li>
+            <button id ="logout">Logout</button>
+          </li>
+          </ul>
+        {{else}}
+          <ul>
+            <li>
+              <a class="is-size-5 pr-6" href ="/login">Login</a>
+            </li>
+          </ul>
+        {{/if}}
+      </nav>
+        
+      
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
 
-        <nav>
-          {{#if loggedIn}}
-            <ul>
-              <li>
-                <a href="/dashboard">Dashboard </a>
-              </li>
-              <li>
-                <a href="/career">Career Prep</a>
-              </li>
-              <li>
-                <button id="logout">Logout</button>
-              </li>
-            </ul>
-          {{else}}
-            <ul>
-              <li>
-                <a class="is-size-5 pr-6" href="/login">Login</a>
-              </li>
-            </ul>
-          {{/if}}
-        </nav>
+{{#if loggedIn}}
+<script src ="/javascript/logout.js"></script>
+{{/if}}
 
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-    </div>
-
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
-
-  </body>
+</body>
 
 </html>
