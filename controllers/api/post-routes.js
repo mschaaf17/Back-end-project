@@ -139,7 +139,7 @@ router.put("/:id", withAuth, (req, res) => {
 router.delete("/:id", withAuth, (req, res) => {
   Post.destroy({
     where: {
-      id: req.params.id,
+      id: req.params.id
     },
   })
     .then((dbPostData) => {
