@@ -7,7 +7,7 @@
 /* HEADER AND NAV BAR SECTION */
 header {
     align-items: baseline;
-    background-color: gray;
+    background-image: url('../stylesheets/images/header1.PNG');
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,10 +16,16 @@ header {
     background-size: cover;
 }
 
-
+header a {
+    color: white;
+}
 a {
     color: black;
-    padding: 50px;
+    
+}
+
+a:hover {
+    color: rgb(11, 108, 108);
 }
 h1 {
     padding: 2%;
@@ -89,8 +95,8 @@ h5{
 
 
 button {
-    color: wheat;
-    background-color: darkolivegreen;
+    color: white;
+    background-color: lightseagreen;
     margin: 10px;
     padding: 5px;
     font-size: 16px;
@@ -100,15 +106,18 @@ button {
     align-items: flex-start;
     cursor:pointer;
 }
+button:hover {
+    background-color:rgb(11, 108, 108);
+}
 
 /* RIGHT COLUMN SECTION HOMEPAGE */
 
 
 form {
-    background-color: wheat;
-    border: solid 3px darkolivegreen;
+    background-color: lightgray;
+    border: solid 3px lightseagreen;
     padding: 20px;
-    color: darkolivegreen;
+    color: rgb(11, 108, 108);
     width: 100%;
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
@@ -120,22 +129,35 @@ form {
 
 /* DASHBOARD */
 .cards {
-    background-color: wheat;
-    border: solid 3px darkolivegreen;
-    color: darkolivegreen;
+    background-color: lightgray;
+    border: solid 3px lightseagreen;
+    color: rgb(11, 108, 108);
     margin: 3.5%;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     border-radius: 15px;
 }
 
 .posts {
-    padding: 10%;
+    padding: 5%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* DASHBOARD */
+.title {
+    font-size: 18px;
+    width: 80%;
+    /* border: 2px solid salmon; */
 }
 
 
-/* DASHBOARD */
-.title a {
+.title h3{
     font-size: 18px;
+    font-weight: bold;
 }
 
 p {
@@ -144,15 +166,25 @@ p {
 
 .meta {
     font-size: 12px;
+    color: rgb(11, 108, 108);
 }
 
 .cards li {
     margin: 5px;
 }
+.title-content {
+    color: rgb(11, 108, 108);   
+}
 
 .button {
     max-height: 24px;
     margin-bottom: 10px;
+    border-color: rgb(11, 108, 108);
+}
+
+.button:hover{
+    background-color: rgb(11, 108, 108);
+    color: white;
 }
 
 .cards h2 {
@@ -162,8 +194,14 @@ p {
 
 
 /* CAREER HANDLEBARS STYLE */
+.career-title {
+    color:rgb(11, 108, 108);
+}
 .career-text {
-    color: darkolivegreen;
+    color: rgb(11, 108, 108);
+}
+.career-text:hover {
+    color: black;
 }
 
 .tall {
@@ -187,9 +225,10 @@ p {
 
 /* EDIT POST HANDLEBARS STYLE */
 
-article {
-    padding: 50px;
+.comments-posts {
+    border: solid lightgray 3px;
 }
+
 
 article h2 {
     font-size: 24px;
@@ -209,8 +248,6 @@ article input {
 
 .comment-form {
     margin-bottom: 20px;
-    width: auto;
-
 }
 #comment-body{
     min-width: 100%;
@@ -236,3 +273,15 @@ footer {
     color: black;
     font-size: 24px;
 }
+
+/* QUESTIONS HBS */
+.question-hbs {
+    width: 50%;
+}
+
+.title-comment-post {
+    margin: 4%;
+}
+/* QUESTIONS HBS */
+
+

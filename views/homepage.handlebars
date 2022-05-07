@@ -2,12 +2,12 @@
     <div class="column">
         <form class="left-form">
             <div class="content">
-                <h2>
+                <h2 class="animation-welcome">
                     Welcome to Code Prep!
                 </h2>
             </div>
             <div class="content">
-                <h5>
+                <h5 class="animation-info">
                     Code prep is a collaborative platform for you to for you to practice your coding skills. These can
                     be
                     interview questions, algorithms, or other fun challenges.
@@ -15,11 +15,12 @@
             </div>
         </form>
     </div>
+    
 
     {{#if loggedIn}}
     <div class="column tall">
-        <h2>View Most Recent Interview Questions</h2>
-        <ol class="post-list">
+        <h2>View Most Recent Interview Questions:</h2>
+        <ol class="post-list px-5">
             {{#each posts as |post|}}
             <li>
                 {{> post-info post}}
@@ -73,5 +74,8 @@
 </main>
 
 <script src="/javascript/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src ="/javascript/animation.js"></script>
 
 {{/if}}

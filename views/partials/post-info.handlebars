@@ -1,14 +1,19 @@
 <article class="post">
 
-  <div class="title text-center">
-    <a href ="/post/{{id}}">{{title}}</a>
-   
+  <div class="title text-left">
+    <a href="/post/{{id}}">{{title}}</a>
+
   </div>
-  <div class="meta text-center">
-    posted by {{user.username}} on {{format_date created_at}}
-    <br/>
-    {{likes_count}} {{format_plural "like" likes_count}}
-    <br/>
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  <div class="meta text-left pb-5">
+    posted by
+    {{user.username}}
+    on
+    {{format_date created_at}}
+    <br />
+    {{likes_count}}
+    {{format_plural "like" likes_count}}
+    <br />
+    <a href="/post/{{id}}">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
   </div>
 </article>

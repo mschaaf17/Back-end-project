@@ -23,6 +23,7 @@ router.get("/", withAuth, (req, res) => {
         "likes_count",
       ],
     ],
+    order: [["created_at", "DESC"]],
     include: [
       {
         model: Comment,
@@ -60,6 +61,7 @@ router.get("/", withAuth, (req, res) => {
                 "likes_count",
               ],
             ],
+            order: [["created_at", "DESC"]],
             include: [
               {
                 model: Comment,
