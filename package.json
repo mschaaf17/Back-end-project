@@ -1,7 +1,7 @@
 {
   "name": "backend-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "* [Description](#description) * [Deployed Application](#deployed-application) * [Installation](#installation) * [Contribution](#contribution) * [Usage](#usage) * [GitHub](#github-profile) * [Contact Me](#for-any-questions-contact)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,10 +24,11 @@
     "bulma": "^0.9.3",
     "connect-session-sequelize": "^7.1.3",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3",
+    "express": "^4.18.1",
     "express-handlebars": "^6.0.5",
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.0",
     "session": "^0.1.0"
