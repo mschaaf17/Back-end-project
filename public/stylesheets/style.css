@@ -52,10 +52,10 @@ li {
 /* LEFT COLUMN SECTION HOMEPAGE */
 .content-titles {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 5% 0;
-    background-color: green;
 }
 
 .content {
@@ -143,6 +143,7 @@ form {
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 }
@@ -285,3 +286,14 @@ footer {
 /* QUESTIONS HBS */
 
 
+
+@media screen and (max-width: 520px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-bottom: black;
+    }
+  }
